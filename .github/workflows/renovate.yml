@@ -1,9 +1,5 @@
 name: Renovate
-permissions:
-  contents: write
-  issues: write
-  pull-requests: write
-  actions: write
+permissions: write-all
 on:
   schedule:
     - cron: "0 * * * *"
