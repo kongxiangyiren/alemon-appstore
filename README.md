@@ -22,9 +22,9 @@ https://github.com/apps/renovate
 
 ![alt text](docs/image.png)
 
-## 给予github actions 工作流写入权限
-
 ![alt text](docs/image-1.png)
+
+![alt text](docs/image-2.png)
 
 # 创建应用模板
 
