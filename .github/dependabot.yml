@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # 监控 apps/** 下所有应用的 docker-compose.yml 镜像版本
+  - package-ecosystem: "docker-compose"
+    directories:
+      - "apps/**"
+    schedule:
+      interval: "daily"
+    # 禁止 rebase:目录重命名提交(由 workflow 完成后推送)不应被 rebase 掉
+    rebase-strategy: "disabled"
+    # 版本目录重命名提交 [skip ci] 不会重新触发 workflow
+    commit-message:
+      prefix: "chore(app)"
+    labels:
+      - "dependencies"

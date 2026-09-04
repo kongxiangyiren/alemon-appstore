@@ -12,11 +12,13 @@ cp -rf /opt/1panel/resource/apps/local/appstore-localApps/apps/* /opt/1panel/res
 rm -r /opt/1panel/resource/apps/local/appstore-localApps
 ```
 
-# 复刻说明 (github 开启 bot 推送)
+# 复刻说明 (github 开启 dependabot 推送)
 
-## github 安装 renovate app
+仓库根目录已包含 `.github/dependabot.yml`,github 会自动扫描 `apps/**` 下的 `docker-compose.yml` 镜像版本并发起升级 PR。
 
-https://github.com/apps/renovate
+PR 创建后会自动合并,合并后由 `.github/workflows/dependabot-app-version.yml` 自动重命名版本目录并推送。
+
+无需安装额外 app,若仓库此前关闭过 Dependabot,需在 `Settings -> Code security and analysis -> Dependabot version updates` 中启用。
 
 ## 绑定 alemon-appstore 仓库
 
