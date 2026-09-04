@@ -20,14 +20,6 @@ PR 创建后会自动合并,合并后由 `.github/workflows/dependabot-app-versi
 
 无需安装额外 app,若仓库此前关闭过 Dependabot,需在 `Settings -> Code security and analysis -> Dependabot version updates` 中启用。
 
-## 绑定 alemon-appstore 仓库
-
-![alt text](docs/image.png)
-
-![alt text](docs/image-1.png)
-
-![alt text](docs/image-2.png)
-
 # 创建应用模板
 
 ```sh
