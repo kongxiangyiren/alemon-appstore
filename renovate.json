@@ -7,6 +7,10 @@
   "gitIgnoredAuthors": ["githubaction@githubaction.com"],
   "rebaseWhen": "never",
   "packageRules": [
+     {
+      "matchManagers": ["github-actions"],
+      "enabled": false
+    },
     {
       "matchPackageNames": ["docker-compose"],
       "automerge": true
